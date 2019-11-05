@@ -43,6 +43,67 @@
    align-items: stretch;
 }
 
+.spaced-text {
+   letter-spacing:4px;
+   font-family:"Segoe UI",Arial,sans-serif;
+}
+
+.center {
+   text-align:center;
+   width:auto;
+}
+
+.white-text {
+   color:#fff;
+}
+
+.black-text {
+   color:#000;
+}
+
+.wet-asphalt {
+   color:#fff;
+   background-color:#34495e
+}
+
+.midnight-blue {
+   color:#fff;
+   background-color:#2c3e50
+}
+
+.concrete {
+   color:#fff;
+   background-color:#95a5a6
+}
+
+.asbestos {
+   color:#fff;
+   background-color:#7f8c8d
+}
+
+.dark-grey {
+   color:#fff;
+   background-color:#616161;
+}
+
+.strip {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   width: auto;
+   clear: both;
+}
+
+.xlarge{
+   font-size:24px;
+}
+
+.padding-32{
+   padding-top:32px;
+   padding-bottom:32px;
+}
+
 .main-title {
    position: absolute;
    margin: 0;
