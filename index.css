@@ -73,6 +73,21 @@
    grid-template-columns: 1fr 2fr;
 }
 
+.tech-stack-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   /*border-bottom: solid 1px;*/
+}
+
+.projects {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: stretch;
+   align-content: stretch;
+}
+
 .no-select {
    -webkit-touch-callout: none; /* iOS Safari */
    -webkit-user-select: none; /* Safari */
@@ -87,6 +102,21 @@
    letter-spacing:4px;
    font-family:"Segoe UI",Arial,sans-serif;
 }
+
+.contact-img{
+   position: relative;
+   z-index: 10;
+   top: -22px;
+}
+
+.striped-heading {
+   border-top: solid 1px;
+   border-bottom: solid 1px;
+}
+
+/*ul {*/
+/*   list-style: none;*/
+/*}*/
 
 h1, h2 {
    padding-top: 1%;

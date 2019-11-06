@@ -68,7 +68,7 @@
 
 <section class="strip center" style="background-color: #4a4a4a">
 	<h1 class="spaced-text white-text" style="padding-bottom: 20px">Projects</h1>
-	<section class="row strip center">
+	<div class="row strip center projects">
 		<div class="col-md-6">
 			<article class="roundCorners wet-asphalt">
                 <h3 class="thin" style="text-decoration-line: underline;">Project 1</h3>
@@ -78,14 +78,24 @@
 					FeeFee is a new modern way to synergistically maintain top-line paradigms while
                     assertively engineering multidisciplinary e-commerce resulting in a compellingly restore granular catalysts for change.
 				</p>
-				<p>Tech stack:</p>
-                <ul>
-                    <li>dramatically benchmarked and enabled nosql databases</li>
-                    <li>dynamically maintained, cross-media react components</li>
-                    <li>progressively parallel task B2C services</li>
-                    <li>Hive mind enabled SSL certificates</li>
-                    <li>HTML</li>
-                </ul>
+				<h5 class="striped-heading spa">Tech stack:</h5>
+                <div class="tech-stack-container">
+                    <div>
+                        <ul>
+                            <li>ReactJS</li>
+                            <li>JavaScript</li>
+                            <li>Database</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>TypeScript</li>
+                            <li>Web API</li>
+                            <li>HTML, CSS</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <p>
                     Click below to see it in action or view the source code.
                 </p>
@@ -119,15 +129,19 @@
                 <a style="color: white;" target="_blank" href="https://github.com/JoelSatkas?tab=repositories"><i class="fa fa-github fa-2x"></i></a>
 			</article>
 		</div>
-	</section>
+	</div>
 
     <div style="padding: 1%"></div>
 </section>
 
 <section class="strip center dark-grey">
    <h1 class="spaced-text">Contact Me</h1>
-    <button class="black-text" onclick="email();return false;">Click here to contact me</button>
-    <div id="contactMe"></div>
+
+    <div>
+        <div style="border-top: solid 1px; width: 30%;margin:auto"></div>
+        <a href="#" onclick="email(); return false;" class="dark-grey contact-img"><img class="" alt="Arrow Down Icon" src="arrow-down2.png"></a>
+    </div>
+    <div style="padding-bottom: 2%;" id="contactMe"></div>
 </section>
 
 
@@ -154,11 +168,17 @@
 	        return;
         }
 	    emailClicked = true;
-        let part1 = "example11";
-        let part2 = Math.pow(2,6);
-        let part3 = String.fromCharCode(part2);
-        let part4 = "imNotReal.eh";
-        document.getElementById('contactMe').append("Please email us at " + part1 + part3 + part4);
+        let part1 = "Joel";
+        let part2 = ".";
+        let part3 = "Satkas";
+        let part4 = Math.pow(2,6);
+        let part5 = String.fromCharCode(part4);
+        let part6 = "gmail";
+        let part7 = ".";
+        let part8 = "com";
+        let contact = part1 + part2 + part3 + part5 + part6 + part7 + part8;
+        let d1 = document.getElementById('contactMe');
+        d1.insertAdjacentHTML('beforeend', 'Please email me at <p>' + contact + '</p>');
     }
 </script>
 <!-- REMINDER: Strip images of meta data -->
