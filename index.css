@@ -35,17 +35,62 @@
    transform: translate3d(-50%, -50%, 0);
 }
 
+.thumb-nail {
+   width: 15rem;
+   height: 15rem;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
+   transform: scale(1.1);
+   overflow: hidden;
+}
+
+.thumb-nail-image {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center center;
+   opacity: 1;
+   transition: opacity 0.5s ease 0s;
+}
+
 .flex-container {
    position: relative;
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
-   align-items: stretch;
+   padding: 1rem;
+   -moz-box-pack: center;
+   justify-content: center;
+   -moz-box-align: center;
+   align-items: center;
+   text-align: center;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+.no-select {
+   -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Old versions of Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }
 
 .spaced-text {
    letter-spacing:4px;
    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+h1, h2 {
+   padding-top: 1%;
+   padding-bottom: 1%;
 }
 
 .center {
@@ -143,8 +188,8 @@
    width:  300px;
    height: 300px;
    background-position: 50% 50%;
-   background-repeat:   no-repeat;
-   background-size:     cover;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 a:hover {
